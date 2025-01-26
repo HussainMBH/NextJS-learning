@@ -83,7 +83,7 @@ export default function Signup() {
           <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
             <div className="rounded-md shadow-sm -space-y-px">
               <div>
-                
+                <label htmlFor="username" className="sr-only">Username</label>
                 <input
                   id="username"
                   name="username"
