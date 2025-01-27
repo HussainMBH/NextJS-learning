@@ -135,7 +135,19 @@ export default function Signup() {
               </div>
               <div>
                 <label htmlFor="password" className="sr-only">Password</label>
-                
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autoComplete="new-password"
+                  required
+                  className={`appearance-none rounded-none relative block w-full px-3 py-2 border ${
+                    errors.password ? 'border-red-500' : 'border-gray-300'
+                  } placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm`}
+                  placeholder="Password"
+                  value={input.password}
+                  onChange={handleChange}
+                />
                 {errors.password && <p className="mt-2 text-sm text-red-600">{errors.password}</p>}
               </div>
               <div>
